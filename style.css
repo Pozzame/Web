@@ -1,40 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Playwrite+CU:wght@100..400&family=Protest+Guerrilla&display=swap');
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial;
 }
-#section1 {
-  font-family: "Playwrite CU", cursive;
-  font-optical-sizing: auto;
-  font-weight: 250;
-  font-style: normal;
-}
-#section2 {
-  font-family: "Protest Guerrilla", cursive;
-  font-optical-sizing: auto;
-  font-weight: 250;
-  font-style: normal;
-}
+
+#section1,
+#section2,
 #section3 {
-    font-family: "Handjet", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "ELGR" 1,
-      "ELSH" 2;
+  font-family: Arial;
+  padding: 0 20vw;
+}
+
+.testo-nascosto {
+  display: none;
+}
+.testo-nascosto:target {
+  display: block;
 }
 
 header {
   background-color: #2e073f;
   color: #ebd3f8;
-  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   text-align: center;
-  /* nav fisso 
-    position: fixed;
-    width: 100%; */
+}
+header h1 {
+  padding-top: 2vh;
+  margin: 0;
 }
 nav {
   background-color: #7a1cac;
@@ -102,7 +96,7 @@ p {
 }
 
 ul {
-  list-style-type: none;
+  
   padding: 0;
 }
 
