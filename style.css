@@ -8,7 +8,7 @@ body {
 #section2,
 #section3 {
   font-family: Arial;
-  padding: 0 20vw;
+  margin: 25px;
 }
 
 .testo-nascosto {
@@ -71,6 +71,8 @@ footer {
   padding: 20px;
   text-align: center;
   position: relative;
+  width: 100%;
+  bottom: 0;
 }
 
 .parag{
@@ -81,19 +83,37 @@ footer {
   border-style: outset
 }
 
-img{
-  max-width: 100%;
+.bio img{
+  height: 300px;
+  width: 300px;
+
+  top: 0;
 }
-.column1, .column2 {
-  flex: 1;
-  float: left;
-  width: 50%;
-  height: 300px; /* Should be removed. Only for demonstration */
+
+.row:nth-child(1){
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 100px;
+}
+.column2{
+  width: calc();
+}
+.bio{
+  display:flex;
+  align-items: start;
+  height: 80vh;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 140px;
 }
 
 .row{
   display: flex;
 }
+
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -107,5 +127,8 @@ img{
   nav a {
     font-size: x-small;
     padding: 10px;
+  }
+  .column1{
+    display: none;
   }
 }
