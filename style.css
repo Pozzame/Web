@@ -16,7 +16,7 @@ body {
 }
 .testo-nascosto:target {
   display: block;
-  
+  padding-bottom: 140px;
 }
 
 header {
@@ -28,7 +28,6 @@ header {
   z-index: 100; /* Mantiene l'header sopra gli altri contenuti */
   text-align: center;
 }
-
 header h1 {
   padding-top: 2vh;
   margin: 0;
@@ -45,13 +44,8 @@ nav a {
   text-decoration: none;
   padding: 20px;
 }
-
 nav a:hover {
   background-color: #2e073f;
-}
-
-.content {
-  padding-top: 140px; /* Compensa l'altezza dell'header */
 }
 
 .vuoto{
@@ -64,7 +58,6 @@ nav a:hover {
   margin-top: -140px; /* Solleva la sezione in modo che appaia correttamente sotto l'header */
 }
 
-
 footer {
   background-color: #2e073f;
   color: #ebd3f8;
@@ -72,7 +65,8 @@ footer {
   text-align: center;
   position: relative;
   width: 100%;
-  bottom: 0;
+  bottom: 0vh;
+  position: fixed;
 }
 
 .parag{
@@ -83,43 +77,29 @@ footer {
   border-style: outset
 }
 
-.bio img{
-  height: 300px;
-  width: 300px;
+.riga{
+display: flex;
+padding-top: 140px; /* Compensa l'altezza dell'header */
 
-  top: 0;
 }
-
-.row:nth-child(1){
-  position: sticky;
+.colonna:nth-child(1){
+  position: fixed;
   top: 0;
-  height: 100vh;
   overflow: hidden;
-  min-width: 100px;
-}
-.column2{
-  width: calc();
-}
-.bio{
-  display:flex;
-  align-items: start;
-  height: 80vh;
-  flex-direction: column;
   margin-left: 10px;
   margin-top: 140px;
 }
-
-.row{
-  display: flex;
+.colonna:nth-child(1) img{
+  height: 350px;
+  width: 350px;
 }
-
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.colonna:nth-child(1) p{
+  height: 300px;
+  width: 300px;
+  position: fixed;
+}
+.colonna:nth-child(2){
+  margin-left: 360px;
 }
 
 
@@ -128,7 +108,14 @@ footer {
     font-size: x-small;
     padding: 10px;
   }
-  .column1{
+  .colonna:nth-child(2){
     display: none;
   }
 }
+
+svg{
+  height: 15px;
+  width: 15px;
+  /*display: flex;
+  align-items: center;
+*/}
