@@ -8,7 +8,9 @@ body {
 #section2,
 #section3 {
   font-family: Arial;
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 10px;
+  max-width: 787px;
 }
 
 .testo-nascosto {
@@ -90,8 +92,8 @@ padding-top: 140px; /* Compensa l'altezza dell'header */
   margin-top: 140px;
 }
 .colonna:nth-child(1) img{
-  height: 350px;
-  width: 350px;
+  height: 380px;
+  width: 380px;
 }
 .colonna:nth-child(1) p{
   height: 300px;
@@ -99,7 +101,7 @@ padding-top: 140px; /* Compensa l'altezza dell'header */
   position: fixed;
 }
 .colonna:nth-child(2){
-  margin-left: 360px;
+  margin-left: 380px;
 }
 
 
